@@ -13,13 +13,13 @@
             <div ng-repeat="word in words track by $index">
                 <dt>{{word}}</dt>
                 <dd>
-                    <input type="text" ng-model="values[$index]" ng-input="onInputChange()"/>
+                    <input type="text" ng-model="values[$index]" ng-change="onInputChange()"/>
                 </dd>
             </div>
         </dl>
         <div class="madLibOutput">
             <!-- TODO -->
-            Once upon a <noun/> <noun/>
+            Once upon a <word>Noun</word> <word>Noun</word>
         </div>
     </div>
   </body>
