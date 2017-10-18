@@ -3,16 +3,20 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
     <script src="madlib.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
 
   <body>
     <div ng-app='app' ng-controller='mainCtrl'>
-        <div class="madLibInput">
+        <dl class="madLibInput dl-horizontal">
             <div ng-repeat="word in words track by $index">
-                {{word}} <input type="text" ng-model="values[$index]" ng-input="onInputChange()"/>
+                <dt>{{word}}</dt>
+                <dd>
+                    <input type="text" ng-model="values[$index]" ng-input="onInputChange()"/>
+                </dd>
             </div>
-        </div>
+        </dl>
         <div class="madLibOutput">
             <!-- TODO -->
             {{ values.join(", ") }}
