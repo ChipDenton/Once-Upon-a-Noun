@@ -7,8 +7,8 @@ function mainCtrl ($scope) {
   $scope.values = [];
 
   // Click listener for testing:
-  $scope.click = function() {
-    console.log($scope);
+  $scope.onInputChange = function() {
+    
   }
 }
 

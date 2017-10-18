@@ -10,15 +10,12 @@
     <div ng-app='app' ng-controller='mainCtrl'>
         <div class="madLibInput">
             <div ng-repeat="word in words track by $index">
-                {{word}} <input type="text" ng-model="values[$index]"/>
+                {{word}} <input type="text" ng-model="values[$index]" ng-input="onInputChange()"/>
             </div>
-
-            <button ng-click="click()">
-                go
-            </button>
         </div>
         <div class="madLibOutput">
             <!-- TODO -->
+            {{ values.join(", ") }}
         </div>
     </div>
   </body>
