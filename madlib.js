@@ -3,15 +3,13 @@ angular.module('app', [])
   .directive('avatar', madlibDirective);
 
 function mainCtrl ($scope) {
-  
-
-  };
+  // TODO
 }
 
 function madlibDirective () {
   return {
     scope: {
-      
+
     },
     restrict: 'E',
     replace: 'true',
@@ -24,7 +22,7 @@ function madlibDirective () {
     ), /* [3] */
     link: link
   };
-  
+
   function link (scope) { /* [4] */
     if (!scope.user.avatarUrl) {
       scope.user.avatarUrl = 'https://www.drupal.org/files/issues/default-avatar.png';
