@@ -5,11 +5,6 @@ angular.module('app', [])
 function mainCtrl ($scope) {
   $scope.words = [];
   $scope.values = [];
-
-  // Click listener for testing:
-  $scope.onInputChange = function() {
-    console.log($scope);
-  }
 }
 
 var counter = 0;
