@@ -9,7 +9,13 @@
   <body>
     <div ng-app='app' ng-controller='mainCtrl'>
         <div class="madLibInput">
-            <!-- TODO -->
+            <div ng-repeat="word in words track by $index">
+                {{word}} <input type="text" ng-model="values[$index]"/>
+            </div>
+
+            <button ng-click="click()">
+                go
+            </button>
         </div>
         <div class="madLibOutput">
             <!-- TODO -->

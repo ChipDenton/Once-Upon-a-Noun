@@ -3,7 +3,13 @@ angular.module('app', [])
   .directive('avatar', madlibDirective);
 
 function mainCtrl ($scope) {
-  // TODO
+  $scope.words = ["Noun","Preposition","Verb","Noun"];
+  $scope.values = [];
+
+  // Click listener for testing:
+  $scope.click = function() {
+    console.log($scope);
+  }
 }
 
 function madlibDirective () {
