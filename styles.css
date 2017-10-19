@@ -47,6 +47,14 @@ p.summary {
   color: #006;
 }
 
+.madLibOutput button {
+  display: none;
+}
+
+.madLibInput:valid + .madLibOutput button {
+  display: initial;
+}
+
 .madLibInput::before {
   content: "Enter words that match these types:";
   text-align: center;
