@@ -22,7 +22,7 @@
                 <div ng-repeat="word in words track by $index">
                     <dt>{{word}}</dt>
                     <dd>
-                        <input type="text" ng-model="values[$index]" required/>
+                        <input type="text" ng-model="values[$index]" required maxlength="15"/>
                     </dd>
                 </div>
             </dl>
@@ -45,7 +45,7 @@
                 Even in a minute: so full of shapes is fancy <br>
                 That it alone is high fantastical.<br> -->
             </div>
-	    <button ng-click='voiceOutput()'>Text-to-Speech</button>
+	    <button ng-click='voiceOutput()'>Read it to Me</button>
         </div>
     </div>
     <footer>
