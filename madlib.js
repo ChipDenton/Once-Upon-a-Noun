@@ -5,6 +5,12 @@ angular.module('app', [])
 function mainCtrl ($scope) {
   $scope.words = [];
   $scope.values = [];
+  $scope.voiceOutput = doVoiceOutput;
+}
+
+function doVoiceOutput() {
+  var text = document.querySelector(".speech").innerText
+  responsiveVoice.speak(text);
 }
 
 var counter = 0;

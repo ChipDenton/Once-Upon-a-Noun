@@ -1,5 +1,6 @@
 body {
   color: #606;
+  background-color: #22e58a;
 }
 
 header {
@@ -43,7 +44,8 @@ p.summary {
 
 .madLibOutput:hover {
   border-color: #a0a;
-  background-color: white;
+  background-color: #22e58a;
+  color: #006;
 }
 
 .madLibInput::before {
@@ -64,8 +66,8 @@ p.summary {
 
 .madLibOutput {
   min-width: 300px;
-  color: black;
-  background-color: black;
+  color: #1aa590;
+  background-color: #1aa590;
 }
 
 .dl-horizontal dt {
