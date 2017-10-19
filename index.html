@@ -14,19 +14,19 @@
         Once Upon a Noun
     </header>
     <p class="summary">
-        Type corresponding words on the left to change the story on the right. Hover over the story to make it appear.
+        Type corresponding words on the left to change the story on the right. You can hover over the story to make it appear.
     </p>
     <div ng-app='app' ng-controller='mainCtrl'>
-        <div class="madLibInput">
+        <form class="madLibInput">
             <dl class="dl-horizontal">
                 <div ng-repeat="word in words track by $index">
                     <dt>{{word}}</dt>
                     <dd>
-                        <input type="text" ng-model="values[$index]"/>
+                        <input type="text" ng-model="values[$index]" required/>
                     </dd>
                 </div>
             </dl>
-        </div>
+        </form>
         <div class="madLibOutput" title="Enter words on the left to see this change!">
             <div class="speech">
                 If <word>Noun</word> be the <word>Noun</word> of <word>Emotion (noun)</word>, play on;<br>
