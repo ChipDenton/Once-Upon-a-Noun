@@ -1,1 +1,29 @@
- 
+[ng-app="app"] {
+  display: flex;
+  margin: 15px;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+[ng-app="app"] > * {
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.madLibInput, .madLibOutput {
+  display: flex;
+  justify-content: center;
+}
+
+.madLibOutput {
+  min-width: 300px;
+}
+
+.dl-horizontal dt {
+  white-space: initial;
+  width: 220px;
+}
+
+.dl-horizontal dd {
+  margin-left: 240px;
+}

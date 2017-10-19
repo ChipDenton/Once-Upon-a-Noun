@@ -10,17 +10,34 @@
 
   <body>
     <div ng-app='app' ng-controller='mainCtrl'>
-        <dl class="madLibInput dl-horizontal">
-            <div ng-repeat="word in words track by $index">
-                <dt>{{word}}</dt>
-                <dd>
-                    <input type="text" ng-model="values[$index]"/>
-                </dd>
-            </div>
-        </dl>
+        <div class="madLibInput">
+            <dl class="dl-horizontal">
+                <div ng-repeat="word in words track by $index">
+                    <dt>{{word}}</dt>
+                    <dd>
+                        <input type="text" ng-model="values[$index]"/>
+                    </dd>
+                </div>
+            </dl>
+        </div>
         <div class="madLibOutput">
-            <!-- TODO -->
-            Once upon a <word>Noun</word> <word>Noun</word>
+            <div>
+                If <word>Noun</word> be the food of <word>Emotion</word>, play on;<br>
+                Give me excess of it, that, surfeiting,<br>
+                The <word>Noun</word> may sicken, and so <word>Verb</word>.<br>
+                That strain again! it had a <word>Verb ending in -ing</word> fall:<br>
+                O, it came o'er my <word>Body part</word> like the sweet sound,<br>
+                That breathes upon a <word>Noun</word> of <word>Plural noun</word>,<br>
+                Stealing and giving <word>Plural noun</word>! Enough; no more:<br>
+                'Tis not so sweet now as it was before.<br>
+                <!-- O spirit of love! how quick and fresh art thou,<br>
+                That, notwithstanding thy capacity <br>
+                Receiveth as the sea, nought enters there,<br>
+                Of what validity and pitch soe'er,<br>
+                But falls into abatement and low price,<br>
+                Even in a minute: so full of shapes is fancy <br>
+                That it alone is high fantastical.<br> -->
+            </div>
         </div>
     </div>
   </body>
