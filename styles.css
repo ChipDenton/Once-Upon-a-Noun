@@ -1,3 +1,20 @@
+body {
+  color: #006;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 1rem;
+  color: #808;
+}
+
+p.summary {
+  text-align: center;
+  color: #444;
+}
+
 [ng-app="app"] {
   display: flex;
   margin: 15px;
@@ -8,20 +25,46 @@
 [ng-app="app"] > * {
   margin: 10px;
   flex-grow: 1;
+  padding: 20px;
 }
 
 .madLibInput, .madLibOutput {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid currentcolor;
+  transition: border-color 600ms ease;
+}
+
+.madLibInput:hover, .madLibOutput:hover {
+  border-color: #a0a;
+}
+
+.madLibInput::before {
+  content: "Enter words that match these types:";
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.madLibOutput::before {
+  content: "DUKE ORSINO:";
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .madLibOutput {
   min-width: 300px;
+  color: #500;
 }
 
 .dl-horizontal dt {
   white-space: initial;
   width: 220px;
+  margin: .3em;
 }
 
 .dl-horizontal dd {
