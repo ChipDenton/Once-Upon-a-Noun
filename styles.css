@@ -1,6 +1,6 @@
 body {
-  color: #606;
-  background-color: #22e58a;
+  color: #642B6E;
+  background-color: #FFF4B8;
 }
 
 header {
@@ -8,7 +8,6 @@ header {
   font-weight: bold;
   font-size: 3rem;
   margin: 1rem;
-  color: #808;
 }
 
 p.summary {
@@ -39,12 +38,12 @@ p.summary {
 }
 
 .madLibInput:hover {
-  border-color: #a0a;
+  border-color: #2B6E64;
 }
 
 .madLibOutput:hover {
-  border-color: #a0a;
-  background-color: #22e58a;
+  border-color: #2B6E64;
+  background-color: transparent;
   color: #006;
 }
 
@@ -66,8 +65,15 @@ p.summary {
 
 .madLibOutput {
   min-width: 300px;
-  color: #1aa590;
-  background-color: #1aa590;
+  color: #642B6E;
+  background-color: #642B6E;
+}
+
+button {
+  background: none;
+  border: 1px solid #642B6E;
+  border-radius: 1px;
+  font-weight: bold;
 }
 
 .dl-horizontal dt {
